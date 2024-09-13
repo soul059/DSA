@@ -12,6 +12,17 @@ void insertionSort(int arr[],int n){
     }
 }
 
+void recursiveInsertionSort(int arr[],int low,int high){
+   if(low < high){
+        int j = low + 1;
+        while(j > 0 && arr[j] < arr[j-1]){
+            swap(arr[j],arr[j-1]);
+            j--;
+        }
+        recursiveInsertionSort(arr,low+1,high);
+    }
+}
+
 int main(){
     int n;
     cin>> n;

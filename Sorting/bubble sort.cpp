@@ -22,6 +22,27 @@ void bubbleSort(int arr[],int n){
     
 }
 
+
+void recursiveBubbleSort(int arr[],int low,int high){
+    if(low < high){
+        bool didswap = false;
+        for (int i = 0; i < high; i++)
+        {
+            if(arr[i]>arr[i+1]){
+                swap(arr[i],arr[i+1]);
+                didswap = true;
+            }
+        }
+        if (!didswap)
+        {
+            return;
+        }
+        recursiveBubbleSort(arr,low,high-1);
+    }
+    
+    
+}
+
 int main(){
     int n;
     cin>> n;

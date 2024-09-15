@@ -7,17 +7,19 @@ using namespace  std;
 
 int hashSol(vector<int> &arr,int n){
     unordered_map<int,int> ump;
+    int min = n/2 +1;
 
     for (int i = 0; i < n; i++)
     {
         ump[arr[i]]++;
+        if(ump[arr[i]] >= min ) return arr[i];
     }
-    for(auto it : ump){
-        if (it.second > n/2)
-        {
-            return it.first;
-        } 
-    }
+    // for(auto it : ump){
+    //     if (it.second > n/2)
+    //     {
+    //         return it.first;
+    //     } 
+    // }
 
     return -1;
 }

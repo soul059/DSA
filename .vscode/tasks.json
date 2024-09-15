@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "Build and Run with IO",
+          "type": "shell",
+          "command": "${workspaceFolder}/run.bat",
+          "args": [
+              "${file}",
+              "${fileDirname}/${fileBasenameNoExtension}.exe"
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          },
+          "problemMatcher": ["$gcc"],
+          "detail": "Generated task for building and running C++ files with input and output redirection"
+      }
+  ]
+}

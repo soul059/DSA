@@ -37,7 +37,7 @@ int upperBound(vector<int> arr,int x){
 
 pair<int,int> firstAndLast(vector<int> arr,int x){
     int lb = lowerBound(arr,x);
-    if(lb == arr.size() && arr[lb] != x) return {-1,-1};
+    if(lb == arr.size() || arr[lb] != x) return {-1,-1};
     return {lb,upperBound(arr,x) -1};
 }
 

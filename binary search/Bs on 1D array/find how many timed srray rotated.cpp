@@ -6,7 +6,7 @@ using namespace  std;
 // ans will be 3 times so same as minimum in array 
 //here 1 is at 3 index that's why array is being roted 3 times
 // just for understanding : rotating done by 1 rotation at time 
-int minInRotatedSorted(vector<int> arr,int target){
+int minInRotatedSorted(vector<int> arr){
     int low=0, high= arr.size()-1;
     int mini = INT_MAX;
     int index = -1;
@@ -38,12 +38,12 @@ int minInRotatedSorted(vector<int> arr,int target){
 }
 
 int main(){
-    int n,x;
+    int n;
     cin>>n;
     vector<int> arr(n);
     for(int i=0;i<n;i++) cin>>arr[i];
 
-    int ans = minInRotatedSorted(arr,x);
+    int ans = minInRotatedSorted(arr);
     cout<<"array is being rotated: "<<ans<<"\ttimes"<<endl;
     return 0;
 }

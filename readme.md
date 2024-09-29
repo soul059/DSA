@@ -7,8 +7,6 @@ Welcome to the DSA repository! This repository contains various data structures 
 - [Introduction](#introduction)
 - [Data Structures](#data-structures)
 - [Algorithms](#algorithms)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -70,3 +68,5 @@ To set up Visual Studio Code for working on data structures and algorithms in C+
 - **Heaps**: Heaps are specialized tree-based data structures that satisfy the heap property.
 
 ## **I Will provide hand written notes for DSA**
+- **Basic**: [Basic of c++](https://drive.google.com/file/d/1fcHJGBdBlzAp_dKLZ-YJBfnj1jZf1usP/view?usp=drivesdk)
+- **Arrays**: [array problem notes](https://drive.google.com/file/d/1fed9tEYUV2ecPGUV0O5QuRz8uNJJ6x2s/view?usp=drivesdk)

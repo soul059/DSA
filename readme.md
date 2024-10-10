@@ -69,5 +69,6 @@ To set up Visual Studio Code for working on data structures and algorithms in C+
 
 ## **I Will provide hand written notes for DSA**
 - **Basic**: [Basic of c++](https://drive.google.com/file/d/1fcHJGBdBlzAp_dKLZ-YJBfnj1jZf1usP/view?usp=drivesdk)
+- **sorting**: [Sorting algos](https://drive.google.com/file/d/1yQXFKaIoBkqr-kzGiE7d8rtfryFidEp7/view?usp=drivesdk)
 - **Arrays**: [array problem notes](https://drive.google.com/file/d/1fed9tEYUV2ecPGUV0O5QuRz8uNJJ6x2s/view?usp=drivesdk)
-- **Binary serch**: [Binary serch problem notes](https://drive.google.com/file/d/1fed9tEYUV2ecPGUV0O5QuRz8uNJJ6x2s/view?usp=drivesdk)
+- **Binary serch**: [Binary serch problem notes](https://drive.google.com/file/d/1ySdA07EIS9cLa9f8jlGxa1NCR1Xv_zFy/view?usp=drivesdk)

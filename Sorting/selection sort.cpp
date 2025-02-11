@@ -12,6 +12,7 @@ void selectionSort(int arr[], int n){
                 min = j;
             } 
         }
+        if(min == i) continue;
         swap(arr[i],arr[min]);
         
     }

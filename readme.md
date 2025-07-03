@@ -52,6 +52,7 @@ To set up Visual Studio Code for working on data structures and algorithms in C+
 2. **Install C++ Extension**: Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window. Search for "C++" and install the C/C++ extension by Microsoft.
 3. **Set Up Compiler**: Ensure you have a C++ compiler installed. You can use MinGW for Windows, or GCC for Linux and macOS. Follow the instructions [here](https://code.visualstudio.com/docs/cpp/config-mingw) to set up MinGW on Windows.
 4. **Configure Build Tasks**: Create a `tasks.json` file in the `.vscode` folder to define build tasks. This helps in compiling and running your C++ code directly from VS Code.
+5. **Compile and Run**: ctrl + shift + b
 
 ![VS code setup for DSA](setup.png)
 

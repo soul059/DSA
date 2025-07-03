@@ -6,6 +6,6 @@ using namespace  std;
 int main(){
     int n;
     cin>>n;
-    cout<<"hello world!"<<"\tn"<<endl;
+    cout<<"hello world!"<<"\t"<<n<<endl;
     return 0;
 }

@@ -185,23 +185,54 @@ public:
     }
 };
 
-LinkedList<int> oddeven(LinkedList<int>& list) {
-    Node<int>* odd = list.getHead();
-    Node<int>* even = list.getHead()->next;
-    Node<int>* evenHead = even;
+LinkedList<int> sort0_1_2(LinkedList<int>& list) {
+// Create dummy heads and tails for 0s, 1s, and 2s lists
+Node<int> zeroDummy(0), oneDummy(0), twoDummy(0);
+Node<int>* zeroTail = &zeroDummy;
+Node<int>* oneTail = &oneDummy;
+Node<int>* twoTail = &twoDummy;
 
-    while(even && even->next) {
-        odd->next = odd->next->next;
-        even->next = even->next->next;
+Node<int>* curr = list.getHead();
 
-        odd = odd->next;
-        even = even->next;
+// Partition nodes into three lists
+while (curr) {
+    if (curr->data == 0) {
+        zeroTail->next = curr;
+        zeroTail = zeroTail->next;
+    } else if (curr->data == 1) {
+        oneTail->next = curr;
+        oneTail = oneTail->next;
+    } else {
+        twoTail->next = curr;
+        twoTail = twoTail->next;
     }
-    odd->next = evenHead; // Link the end of odd list to the head of even list
-    return list;
+    curr = curr->next;
+}
+
+// Connect the three lists
+zeroTail->next = oneDummy.next ? oneDummy.next : twoDummy.next;
+oneTail->next = twoDummy.next;
+twoTail->next = nullptr;
+
+// Create new LinkedList with sorted nodes
+LinkedList<int> result;
+result.deleteList(); // Ensure empty
+Node<int>* sortedHead = zeroDummy.next;
+while (sortedHead) {
+    result.insertAtTail(sortedHead->data);
+    sortedHead = sortedHead->next;
+}
+return result;
 }
 
 int main(){
-
+    LinkedList<int> list;
+    vector<int> arr = {1, 0, 2, 1, 0, 2, 1, 0, 2};
+    list.creatFromArray(arr);
+    cout << "Original List: ";
+    list.display();
+    LinkedList<int> sortedList = sort0_1_2(list);
+    cout << "Sorted List: ";
+    
     return 0;
 }

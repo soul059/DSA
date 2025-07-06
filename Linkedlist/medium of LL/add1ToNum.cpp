@@ -188,6 +188,47 @@ public:
     }
 };
 
+int addOneUtil(Node<int>* head) {
+    if (!head) {
+        return 1; // Base case: if the list is empty, return 1
+    }
+
+    // Recursively call for the next node
+    int carry = addOneUtil(head->next);
+
+    // Add carry to the current node's data
+    head->data += carry;
+
+    // If the current node's data is 10, set it to 0 and return 1 (carry)
+    if (head->data == 10) {
+        head->data = 0;
+        return 1; // Carry to the next node
+    }
+
+    // Otherwise, return 0 (no carry)
+    return 0;
+}
+
+Node<int>* addOne(Node<int>* head) {
+    // If the list is empty, create a new node with value 1
+    if (!head) {
+        return new Node<int>(1);
+    }
+
+    // Call the utility function to add one
+    int carry = addOneUtil(head);
+
+    // If there is a carry left, create a new node at the head
+    if (carry) {
+        Node<int>* newHead = new Node<int>(1);
+        newHead->next = head;
+        return newHead;
+    }
+
+    // Otherwise, return the original head
+    return head;
+}
+
 int main(){
     LinkedList<int> list;
     list.insert(1);

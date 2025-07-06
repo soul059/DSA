@@ -19,6 +19,13 @@ private:
     Node<T>* tail;  
 public:
     DoublyLinkedList() : head(nullptr), tail(nullptr) {}
+
+    Node<T>* getHead() {
+        return head;
+    }
+    Node<T>* getTail() {
+        return tail;
+    }
     void insertAtHead(T val) {
         Node<T>* newNode = new Node<T>(val);
         if (!head) {

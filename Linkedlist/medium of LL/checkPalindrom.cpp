@@ -188,10 +188,56 @@ public:
     }
 };
 
+Node<int>* reverse(Node<int>* head) {
+    Node<int>* prev = nullptr;
+    Node<int>* current = head;
+    Node<int>* next = nullptr;
+    while (current) {
+        next = current->next;
+        current->next = prev;
+        prev = current;
+        current = next;
+    }
+    return prev; // New head of the reversed list
+}
+
+bool isPalindrome(Node<int>* head) {
+    Node<int>* slow = head;
+    Node<int>* fast = head;
+
+    // Find the middle of the linked list
+    while (fast->next && fast->next->next) {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+    // Reverse the second half of the linked list
+    Node<int>* newHead = reverse(slow->next);
+    // Compare the first half and the reversed second half
+    Node<int>* firstHalf = head;
+    Node<int>* secondHalf = newHead; // This is the head of the reversed second half
+    while (secondHalf) {
+        if (firstHalf->data != secondHalf->data) {
+            return false; // Not a palindrome
+        }
+        firstHalf = firstHalf->next;
+        secondHalf = secondHalf->next;
+    }
+    // Restore the original list (optional)
+    slow->next = reverse(newHead); // Restore the second half
+
+
+    return true; // Is a palindrome
+}
+
 int main(){
     LinkedList<int> list;
-    list.insert(1);
-    list.insert(2);
+    vector<int> arr = {1, 2, 3, 2, 1};
+    list.creatFromArray(arr);
     list.display();
+    if (isPalindrome(list.getHead())) {
+        cout << "The linked list is a palindrome." << endl;
+    } else {
+        cout << "The linked list is not a palindrome." << endl;
+    }
     return 0;
 }

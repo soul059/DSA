@@ -188,58 +188,44 @@ public:
     }
 };
 
-int addOneUtil(Node<int>* head) {
-    if (!head) {
-        return 1; // Base case: if the list is empty, return 1
+int findLoopLength(Node<int>* slow, Node<int>* fast) {
+    int length = 1;
+    while (slow->next != fast) {
+        slow = slow->next;
+        length++;
     }
-
-    // Recursively call for the next node
-    int carry = addOneUtil(head->next);
-
-    // Add carry to the current node's data
-    head->data += carry;
-
-    // If the current node's data is 10, set it to 0 and return 1 (carry)
-    if (head->data == 10) {
-        head->data = 0;
-        return 1; // Carry to the next node
-    }
-
-    // Otherwise, return 0 (no carry)
-    return 0;
+    return length;
 }
 
-Node<int>* addOne(Node<int>* head) {
-    // If the list is empty, create a new node with value 1
-    if (!head) {
-        return new Node<int>(1);
+int lengthOfLoop(Node<int>* head) {
+    Node<int>* slow = head;
+    Node<int>* fast = head;
+
+    while (fast && fast->next) {
+        slow = slow->next;
+        fast = fast->next->next;
+
+        if (slow == fast) return findLoopLength(slow,fast);
     }
-
-    // Call the utility function to add one
-    int carry = addOneUtil(head);
-
-    // If there is a carry left, create a new node at the head
-    if (carry) {
-        Node<int>* newHead = new Node<int>(1);
-        newHead->next = head;
-        return newHead;
-    }
-
-    // Otherwise, return the original head
-    return head;
+    return 0; // No loop
 }
 
 int main(){
-    LinkedList<int> ll;
-    ll.creatFromArray({1, 2, 3, 4, 9});
-    cout << "Original List: ";
-    ll.display();
-    Node<int>* newHead = addOne(ll.getHead());
-    cout << "List after adding one: ";
-    LinkedList<int> newList;
-    newList.setHead(newHead);
-    newList.display();
-    // Clean up memory
-    ll.deleteList();
+    LinkedList<int> list;
+    list.insert(1);
+    list.insert(2);
+    list.insert(3);
+    list.insert(4);
+    list.insert(5);
+    Node<int>* head = list.getHead();
+    // Creating a loop for testing
+    head->next->next->next->next->next = head->next; //
+    // 1 -> 2 -> 3 -> 4 -> 5 -> 2 (loop)
+    int loopLength = lengthOfLoop(head);
+    if (loopLength > 0) {
+        cout << "Length of the loop: " << loopLength << endl;
+    } else {
+        cout << "No loop detected." << endl;
+    }
     return 0;
 }

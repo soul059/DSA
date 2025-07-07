@@ -188,58 +188,34 @@ public:
     }
 };
 
-int addOneUtil(Node<int>* head) {
-    if (!head) {
-        return 1; // Base case: if the list is empty, return 1
+bool detectLoop(LinkedList<int>& list) {
+    Node<int>* slow = list.getHead();
+    Node<int>* fast = list.getHead();
+
+    while (fast && fast->next) {
+        slow = slow->next;
+        fast = fast->next->next;
+
+        if (slow == fast) {
+            return true; // Loop detected
+        }
     }
-
-    // Recursively call for the next node
-    int carry = addOneUtil(head->next);
-
-    // Add carry to the current node's data
-    head->data += carry;
-
-    // If the current node's data is 10, set it to 0 and return 1 (carry)
-    if (head->data == 10) {
-        head->data = 0;
-        return 1; // Carry to the next node
-    }
-
-    // Otherwise, return 0 (no carry)
-    return 0;
-}
-
-Node<int>* addOne(Node<int>* head) {
-    // If the list is empty, create a new node with value 1
-    if (!head) {
-        return new Node<int>(1);
-    }
-
-    // Call the utility function to add one
-    int carry = addOneUtil(head);
-
-    // If there is a carry left, create a new node at the head
-    if (carry) {
-        Node<int>* newHead = new Node<int>(1);
-        newHead->next = head;
-        return newHead;
-    }
-
-    // Otherwise, return the original head
-    return head;
+    return false; // No loop
 }
 
 int main(){
-    LinkedList<int> ll;
-    ll.creatFromArray({1, 2, 3, 4, 9});
-    cout << "Original List: ";
-    ll.display();
-    Node<int>* newHead = addOne(ll.getHead());
-    cout << "List after adding one: ";
-    LinkedList<int> newList;
-    newList.setHead(newHead);
-    newList.display();
-    // Clean up memory
-    ll.deleteList();
+    LinkedList<int> list;
+    list.creatFromArray({1, 2, 3, 4, 5});
+    list.display();
+    // Creating a loop for testing
+    Node<int>* head = list.getHead();
+    Node<int>* loopNode = head->next->next; // Node with value 3
+    head->next->next->next->next->next = loopNode; // Creating a
+    // loop: 1 -> 2 -> 3 -> 4 -> 5 -> 3 (loop starts here)
+    if (detectLoop(list)) {
+        cout << "Loop detected in the linked list." << endl;
+    } else {
+        cout << "No loop detected in the linked list." << endl;
+    }
     return 0;
 }

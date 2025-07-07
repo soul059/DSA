@@ -188,58 +188,36 @@ public:
     }
 };
 
-int addOneUtil(Node<int>* head) {
-    if (!head) {
-        return 1; // Base case: if the list is empty, return 1
+Node<int>* findIntersection(LinkedList<int>& list1, LinkedList<int>& list2) {
+    Node<int>* head1 = list1.getHead();
+    Node<int>* head2 = list2.getHead();
+    
+    if (!head1 || !head2) return nullptr;
+
+    Node<int>* temp1 = head1;
+    Node<int>* temp2 = head2;
+
+    while (temp1 != temp2) {
+        temp1 = temp1 ? temp1->next : head2;
+        temp2 = temp2 ? temp2->next : head1;
     }
-
-    // Recursively call for the next node
-    int carry = addOneUtil(head->next);
-
-    // Add carry to the current node's data
-    head->data += carry;
-
-    // If the current node's data is 10, set it to 0 and return 1 (carry)
-    if (head->data == 10) {
-        head->data = 0;
-        return 1; // Carry to the next node
-    }
-
-    // Otherwise, return 0 (no carry)
-    return 0;
-}
-
-Node<int>* addOne(Node<int>* head) {
-    // If the list is empty, create a new node with value 1
-    if (!head) {
-        return new Node<int>(1);
-    }
-
-    // Call the utility function to add one
-    int carry = addOneUtil(head);
-
-    // If there is a carry left, create a new node at the head
-    if (carry) {
-        Node<int>* newHead = new Node<int>(1);
-        newHead->next = head;
-        return newHead;
-    }
-
-    // Otherwise, return the original head
-    return head;
+    return temp1; // This will be the intersection node or nullptr if no intersection exists
 }
 
 int main(){
-    LinkedList<int> ll;
-    ll.creatFromArray({1, 2, 3, 4, 9});
-    cout << "Original List: ";
-    ll.display();
-    Node<int>* newHead = addOne(ll.getHead());
-    cout << "List after adding one: ";
-    LinkedList<int> newList;
-    newList.setHead(newHead);
-    newList.display();
-    // Clean up memory
-    ll.deleteList();
+    LinkedList<int> list1;
+    LinkedList<int> list2;
+    list1.creatFromArray({1, 2, 3});
+    list2.creatFromArray({6, 7, 8});
+
+    list1.getHead()->next->next->next = list2.getHead()->next;
+    list1.display();
+    list2.display();
+    Node<int>* intersection = findIntersection(list1, list2);
+    if (intersection) {
+        cout << "Intersection at node with value: " << intersection->data << endl;
+    } else {
+        cout << "No intersection found." << endl;
+    }
     return 0;
 }

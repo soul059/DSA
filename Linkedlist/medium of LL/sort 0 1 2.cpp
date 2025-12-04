@@ -1,3 +1,14 @@
+/*
+ * SORT LINKED LIST OF 0s, 1s, AND 2s
+ * 
+ * Approach 1: Count 0s, 1s, 2s and overwrite data
+ * Approach 2: Create 3 dummy lists, distribute nodes, connect them
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Similar to Dutch National Flag problem
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

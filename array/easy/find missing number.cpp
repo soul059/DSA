@@ -1,3 +1,14 @@
+/*
+ * FIND MISSING NUMBER (1 to N)
+ * 
+ * Approach: Sum formula - n(n+1)/2
+ * Missing = Expected sum - Actual sum
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Alternative: XOR all elements with 1 to n
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;

@@ -1,6 +1,16 @@
 
 
 
+/*
+ * Minimise Maximum Distance between Gas Stations
+ * Approach: Binary search on answer (real numbers); for each distance count stations needed
+ *           Find minimum distance where stations required <= k
+ * Time: O(n * log(maxDist / precision))
+ * Space: O(1)
+ * Key: Use precision 1e-6 for floating point; count = floor(gap/dist) stations per segment
+ */
+
+
 #include <bits/stdc++.h>
 using namespace std;
 

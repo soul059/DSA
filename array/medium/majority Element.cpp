@@ -1,3 +1,13 @@
+/*
+ * MAJORITY ELEMENT - Appears more than n/2 times
+ * 
+ * Approach 1: HashMap - Count frequencies, O(n) time & space
+ * Approach 2: Moore's Voting - O(n) time, O(1) space
+ * 
+ * Moore's Voting: Cancel out different elements, majority survives
+ * Verify the candidate by counting actual occurrences
+ */
+
 #include<iostream>
 #include<vector>
 #include<unordered_map>

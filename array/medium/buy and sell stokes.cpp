@@ -1,3 +1,12 @@
+/*
+ * BEST TIME TO BUY AND SELL STOCK
+ * 
+ * Track minimum price so far, calculate profit at each day
+ * Max profit = max(current_price - min_price_so_far)
+ * 
+ * Time: O(n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

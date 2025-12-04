@@ -1,3 +1,12 @@
+/*
+ * FIND HOW MANY TIMES ARRAY IS ROTATED
+ * 
+ * Rotation count = Index of minimum element
+ * Use binary search to find minimum in rotated sorted array
+ * 
+ * Time: O(log n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

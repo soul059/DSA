@@ -1,3 +1,12 @@
+/*
+ * CHECK IF ARRAY IS SORTED
+ * 
+ * Approach: Compare each element with its previous
+ * If any arr[i] < arr[i-1], array is not sorted
+ * 
+ * Time: O(n) | Space: O(1)
+ */
+
 #include<iostream>
 using namespace  std;
 

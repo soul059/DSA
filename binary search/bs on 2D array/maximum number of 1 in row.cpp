@@ -1,3 +1,11 @@
+/*
+ * Row with Maximum 1s in Binary Matrix
+ * Approach: For each row, use lower bound to find first 1, count 1s = m - index
+ *           Track row with maximum count of 1s
+ * Time: O(n * log m) where n=rows, m=cols
+ * Space: O(1)
+ * Key: Binary search on each row since rows are sorted (0s before 1s)
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,10 @@
+/*
+ * Fibonacci Series
+ * Approach: fib(n) = fib(n-1) + fib(n-2); base: fib(0)=0, fib(1)=1
+ * Time: O(2^n) - exponential due to overlapping subproblems
+ * Space: O(n) recursive stack
+ * Key: Can be optimized to O(n) using memoization or iteration
+ */
 #include<iostream>
 
 int fibonacci(int n) {

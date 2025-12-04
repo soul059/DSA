@@ -1,3 +1,11 @@
+/*
+ * Median of Row-wise Sorted Matrix
+ * Approach: Binary search on answer range [min, max]; for each mid count elements <= mid
+ *           using upper bound on each row; median has exactly (n*m)/2 elements smaller
+ * Time: O(n * log(max-min) * log m)
+ * Space: O(1)
+ * Key: Binary search on value space, not index; count elements to find median position
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

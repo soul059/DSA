@@ -1,3 +1,13 @@
+/*
+ * PASCAL'S TRIANGLE
+ * 
+ * Each element = C(row, col) = prev * (row-col) / col
+ * 
+ * Row generation: Start with 1, multiply and divide
+ * 
+ * Time: O(n²) | Space: O(n²)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

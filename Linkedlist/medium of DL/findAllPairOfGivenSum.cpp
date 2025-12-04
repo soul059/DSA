@@ -1,3 +1,15 @@
+/*
+ * FIND ALL PAIRS WITH GIVEN SUM IN SORTED DLL
+ * 
+ * Approach: Two Pointer (since list is sorted)
+ * - Left pointer at head, right at tail
+ * - If sum < target: move left forward
+ * - If sum > target: move right backward
+ * - If equal: store pair, move both
+ * 
+ * Time: O(n) | Space: O(1) excluding result
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

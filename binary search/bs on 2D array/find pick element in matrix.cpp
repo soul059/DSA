@@ -1,3 +1,11 @@
+/*
+ * Find Peak Element in 2D Matrix
+ * Approach: Binary search on columns; for mid column find max element row,
+ *           compare with left/right neighbors to decide direction
+ * Time: O(n * log m) where n=rows, m=cols
+ * Space: O(1)
+ * Key: Peak must exist; find column max then check if it's greater than horizontal neighbors
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

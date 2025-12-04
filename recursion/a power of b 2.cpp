@@ -1,3 +1,10 @@
+/*
+ * Power of a Number (Optimized - Binary Exponentiation)
+ * Approach: a^b = (a^(b/2))^2 if even, a * (a^(b/2))^2 if odd
+ * Time: O(log b)
+ * Space: O(log b) recursive stack
+ * Key: Divide exponent by 2 each step - much faster than linear approach
+ */
 #include<iostream>
 
 int power(int a,int b)

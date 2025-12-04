@@ -1,3 +1,15 @@
+/*
+ * FIND INTERSECTION OF TWO LINKED LISTS
+ * 
+ * Approach: Two pointer technique
+ * 1. Traverse both lists; when one ends, redirect to other's head
+ * 2. They'll meet at intersection (or null if no intersection)
+ * 
+ * Time: O(n+m) | Space: O(1)
+ * 
+ * Math: Both pointers travel same total distance (n+m)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

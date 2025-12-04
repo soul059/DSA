@@ -1,3 +1,15 @@
+/*
+ * FIRST AND LAST OCCURRENCE OF X
+ * 
+ * Approach: Use lower_bound and upper_bound
+ * - First occurrence = lower_bound(x)
+ * - Last occurrence = upper_bound(x) - 1
+ * 
+ * Time: O(log n) | Space: O(1)
+ * 
+ * Count of x = last - first + 1
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

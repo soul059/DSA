@@ -1,3 +1,11 @@
+/*
+ * Capacity to Ship Packages within D Days
+ * Approach: Binary search on capacity [max, sum]; for each capacity count days needed
+ *           Find minimum capacity where days <= D
+ * Time: O(n * log(sum - max))
+ * Space: O(1)
+ * Key: Minimum capacity = max element; simulate loading packages to count days
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

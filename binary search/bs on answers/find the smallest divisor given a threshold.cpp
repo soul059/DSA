@@ -1,3 +1,11 @@
+/*
+ * Find Smallest Divisor Given a Threshold
+ * Approach: Binary search on divisor [1, max]; for each divisor compute sum of ceil(arr[i]/div)
+ *           Find minimum divisor where sum <= threshold
+ * Time: O(n * log(max))
+ * Space: O(1)
+ * Key: Larger divisor = smaller sum; binary search for minimum valid divisor
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

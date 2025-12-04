@@ -1,3 +1,12 @@
+/*
+ * UNION OF TWO SORTED ARRAYS
+ * 
+ * Approach: Two pointer merge (like merge sort)
+ * Skip duplicates while adding to result
+ * 
+ * Time: O(n+m) | Space: O(n+m) for result
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;

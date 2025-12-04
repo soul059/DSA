@@ -1,3 +1,21 @@
+/*
+ * SINGLY LINKED LIST IMPLEMENTATION
+ * 
+ * A linear data structure where elements are linked using pointers.
+ * Each node contains: data + pointer to next node
+ * 
+ * Operations & Time Complexity:
+ * - Insert at head: O(1)
+ * - Insert at tail: O(n)
+ * - Insert at K: O(k)
+ * - Delete head: O(1)
+ * - Delete tail: O(n)
+ * - Delete by value: O(n)
+ * - Search: O(n)
+ * 
+ * Space: O(n) for n nodes
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,11 @@
+/*
+ * Aggressive Cows (Maximize Minimum Distance)
+ * Approach: Binary search on answer [1, max-min]; for each distance check if cows can be
+ *           placed greedily maintaining minimum gap; find maximum valid distance
+ * Time: O(n log n + n * log(max - min))
+ * Space: O(1)
+ * Key: Greedy placement - place next cow at first stall with required gap from last cow
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

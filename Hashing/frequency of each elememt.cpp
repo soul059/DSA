@@ -1,3 +1,12 @@
+/*
+ * FREQUENCY OF EACH ELEMENT - Using Hashing
+ * 
+ * Approach: Use unordered_map to count occurrences of each element
+ * Time: O(n) | Space: O(n)
+ * 
+ * Key: element, Value: frequency count
+ */
+
 #include<iostream>
 #include<unordered_map>
 

@@ -1,3 +1,15 @@
+/*
+ * CHECK IF LINKED LIST IS PALINDROME
+ * 
+ * Approach: 1. Find middle using slow-fast pointers
+ *           2. Reverse second half
+ *           3. Compare first half with reversed second half
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Alternative: Use stack O(n) space or recursion
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

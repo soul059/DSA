@@ -1,3 +1,14 @@
+/*
+ * COUNT SUBARRAYS WITH SUM EQUAL TO K
+ * 
+ * Approach: Prefix Sum + HashMap
+ * If prefixSum - k exists in map, those many subarrays end here
+ * 
+ * Time: O(n) | Space: O(n)
+ * 
+ * Note: Initialize map[0] = 1 for subarrays starting from index 0
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,16 @@
+/*
+ * REVERSE NODES IN K-GROUPS
+ * 
+ * Approach: 1. Count if K nodes exist
+ *           2. Reverse K nodes
+ *           3. Recursively process rest
+ *           4. Connect reversed group with result
+ * 
+ * Time: O(n) | Space: O(n/k) for recursion stack
+ * 
+ * Note: Remaining nodes (< K) stay as-is
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

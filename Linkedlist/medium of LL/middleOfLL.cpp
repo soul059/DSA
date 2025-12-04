@@ -1,3 +1,14 @@
+/*
+ * MIDDLE OF LINKED LIST - Tortoise & Hare Algorithm
+ * 
+ * Approach: Use slow (1 step) and fast (2 steps) pointers
+ * When fast reaches end, slow is at middle
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Note: For even length, returns second middle element
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

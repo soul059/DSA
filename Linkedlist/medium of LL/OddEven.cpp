@@ -1,3 +1,14 @@
+/*
+ * ODD-EVEN LINKED LIST
+ * 
+ * Approach: Separate odd-indexed and even-indexed nodes into two lists
+ * Then connect odd list's tail to even list's head
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Note: 1-indexed (1st node is odd, 2nd is even, etc.)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,14 @@
+/*
+ * DELETE ALL OCCURRENCES OF K IN DOUBLY LINKED LIST
+ * 
+ * Approach: Traverse and delete nodes with value K
+ * For each node: update prev.next and next.prev, then delete
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Advantage of DLL: Can delete without knowing previous node
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

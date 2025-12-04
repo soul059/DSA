@@ -1,3 +1,15 @@
+/*
+ * ADD 1 TO NUMBER REPRESENTED AS LINKED LIST
+ * 
+ * Approach: 1. Reverse the list
+ *           2. Add 1 with carry propagation
+ *           3. Reverse back
+ * 
+ * Alternative: Use recursion (implicit stack)
+ * 
+ * Time: O(n) | Space: O(1) for iterative, O(n) for recursive
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

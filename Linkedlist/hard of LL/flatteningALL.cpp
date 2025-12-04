@@ -1,3 +1,16 @@
+/*
+ * FLATTENING A LINKED LIST
+ * 
+ * Each node has 'next' (horizontal) and 'child' (vertical) pointers
+ * All vertical lists are sorted. Flatten into single sorted list.
+ * 
+ * Approach: Recursively merge from right to left
+ * 1. Flatten rest of list (head->next)
+ * 2. Merge current vertical list with flattened rest
+ * 
+ * Time: O(n*m) where n=nodes, m=avg child length | Space: O(n) recursion
+ */
+
 #include <iostream>
 using namespace std;
 

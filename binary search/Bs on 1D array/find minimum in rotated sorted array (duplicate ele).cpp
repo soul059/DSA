@@ -1,3 +1,11 @@
+/*
+ * Find Minimum in Rotated Sorted Array with Duplicates
+ * Approach: Binary search - when duplicates cause equality at low/mid/high, track min
+ *           and shrink both ends; otherwise find sorted half to locate minimum
+ * Time: O(log n) average, O(n) worst case (all duplicates)
+ * Space: O(1)
+ * Key: Minimum is at rotation pivot; handle duplicates by shrinking search space
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

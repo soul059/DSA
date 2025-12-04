@@ -1,3 +1,13 @@
+/*
+ * LONGEST SUBARRAY WITH SUM K - HashMap (Prefix Sum)
+ * 
+ * Works for both positive and negative numbers
+ * Store prefix sum and its first occurrence index
+ * If (prefixSum - k) exists, subarray found
+ * 
+ * Time: O(n) | Space: O(n)
+ */
+
 #include<iostream>
 #include<vector>
 #include<unordered_map>

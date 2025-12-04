@@ -1,3 +1,14 @@
+/*
+ * SORT 0s, 1s, AND 2s - Dutch National Flag Algorithm
+ * 
+ * Three pointers: low, mid, high
+ * - 0s go to [0, low-1]
+ * - 1s go to [low, mid-1]
+ * - 2s go to [high+1, n-1]
+ * 
+ * Time: O(n) | Space: O(1) - Single pass
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

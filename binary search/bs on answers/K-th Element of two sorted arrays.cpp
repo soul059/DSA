@@ -1,3 +1,11 @@
+/*
+ * Kth Element of Two Sorted Arrays
+ * Approach: Binary search on smaller array; partition both arrays such that left has k elements
+ *           Kth element is max of left partitions when valid partition found
+ * Time: O(log(min(n1, n2)))
+ * Space: O(1)
+ * Key: Similar to median problem; adjust partition based on cross comparisons
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

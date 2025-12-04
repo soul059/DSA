@@ -1,3 +1,12 @@
+/*
+ * FIND SECOND LARGEST ELEMENT
+ * 
+ * Approach: Track both max and second_max in single pass
+ * Update second_max when a new max is found
+ * 
+ * Time: O(n) | Space: O(1)
+ */
+
 #include<iostream>
 using namespace  std;
 

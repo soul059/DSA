@@ -1,3 +1,14 @@
+/*
+ * REMOVE NTH NODE FROM END
+ * 
+ * Approach: Two pointer technique
+ * 1. Move fast pointer N steps ahead
+ * 2. Move both pointers until fast reaches end
+ * 3. Slow is now at (N+1)th from end - delete next node
+ * 
+ * Time: O(n) - Single pass | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

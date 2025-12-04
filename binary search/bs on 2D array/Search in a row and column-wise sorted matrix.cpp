@@ -1,3 +1,10 @@
+/*
+ * Search in Row & Column-wise Sorted Matrix
+ * Approach: Start from top-right corner; if current > target go left, if < target go down
+ * Time: O(n + m) where n=rows, m=cols
+ * Space: O(1)
+ * Key: Top-right (or bottom-left) allows eliminating one row/column each step
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,11 @@
+/*
+ * Find Nth Root of an Integer
+ * Approach: Binary search on answer [1, m]; compute mid^n and compare with m
+ *           Early exit if mid^n exceeds m to avoid overflow
+ * Time: O(n * log m)
+ * Space: O(1)
+ * Key: Return 1 if mid^n == m, 0 if less (search right), 2 if more (search left)
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

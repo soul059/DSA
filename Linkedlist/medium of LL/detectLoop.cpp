@@ -1,3 +1,14 @@
+/*
+ * DETECT LOOP IN LINKED LIST - Floyd's Cycle Detection
+ * 
+ * Approach: Tortoise & Hare - slow moves 1 step, fast moves 2 steps
+ * If they meet, loop exists; if fast reaches null, no loop
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Why it works: In a loop, fast pointer will eventually catch slow
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

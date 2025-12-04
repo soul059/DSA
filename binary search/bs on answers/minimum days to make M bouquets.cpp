@@ -1,3 +1,11 @@
+/*
+ * Minimum Days to Make M Bouquets
+ * Approach: Binary search on days [min, max]; for each day count consecutive bloomed flowers
+ *           to form bouquets; find minimum days where bouquets >= m
+ * Time: O(n * log(max - min))
+ * Space: O(1)
+ * Key: Each bouquet needs k consecutive flowers; count bouquets that can be made by given day
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

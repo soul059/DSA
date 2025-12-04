@@ -1,3 +1,11 @@
+/*
+ * Median of Two Sorted Arrays
+ * Approach: Binary search on smaller array; partition both arrays into left/right halves
+ *           Valid partition when l1<=r2 and l2<=r1; median from boundary elements
+ * Time: O(log(min(n1, n2)))
+ * Space: O(1)
+ * Key: Partition arrays such that left half has (n1+n2+1)/2 elements total
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,14 @@
+/*
+ * REMOVE DUPLICATES FROM SORTED DOUBLY LINKED LIST
+ * 
+ * Approach: Since sorted, duplicates are adjacent
+ * Compare current with next, delete if equal
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * For unsorted DLL: Use HashSet O(n) space
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,13 @@
+/*
+ * SPIRAL MATRIX TRAVERSAL
+ * 
+ * Traverse matrix in spiral order: right → down → left → up
+ * Use 4 boundaries: top, bottom, left, right
+ * Shrink boundaries after each direction
+ * 
+ * Time: O(m*n) | Space: O(1) excluding result
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

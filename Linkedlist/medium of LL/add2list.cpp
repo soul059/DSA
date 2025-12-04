@@ -1,3 +1,14 @@
+/*
+ * ADD TWO NUMBERS (LINKED LIST)
+ * 
+ * Numbers are stored in reverse order (1->2->3 = 321)
+ * Approach: Traverse both lists, add digits with carry
+ * 
+ * Time: O(max(n,m)) | Space: O(max(n,m)) for result list
+ * 
+ * Edge cases: Different lengths, final carry
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,14 @@
+/*
+ * REVERSE LINKED LIST
+ * 
+ * Approach: Iterative - Use 3 pointers (prev, curr, next)
+ * Time: O(n) | Space: O(1)
+ * 
+ * Steps: 1. Store next node
+ *        2. Reverse current node's pointer
+ *        3. Move prev and curr one step forward
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

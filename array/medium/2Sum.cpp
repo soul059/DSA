@@ -1,3 +1,12 @@
+/*
+ * TWO SUM - Find pair with given sum
+ * 
+ * Approach 1: Two Pointer (if sorted) - O(n) time, O(1) space
+ * Approach 2: HashMap - O(n) time, O(n) space
+ * 
+ * HashMap: For each element, check if (target - element) exists
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

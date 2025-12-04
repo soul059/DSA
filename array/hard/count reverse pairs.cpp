@@ -1,3 +1,14 @@
+/*
+ * COUNT REVERSE PAIRS - Modified Merge Sort
+ * 
+ * Reverse Pair: arr[i] > 2*arr[j] where i < j
+ * 
+ * Count pairs before merge step (both halves are sorted)
+ * For each left element, count right elements where condition holds
+ * 
+ * Time: O(n log n) | Space: O(n)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,13 @@
+/*
+ * LONGEST CONSECUTIVE SEQUENCE
+ * 
+ * Approach: HashSet
+ * For each element, if (element-1) not in set, it's sequence start
+ * Count consecutive elements from there
+ * 
+ * Time: O(n) | Space: O(n)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

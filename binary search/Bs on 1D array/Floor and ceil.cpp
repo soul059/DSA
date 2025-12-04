@@ -1,3 +1,14 @@
+/*
+ * FLOOR AND CEIL IN SORTED ARRAY
+ * 
+ * Floor: Largest element <= x
+ * Ceil: Smallest element >= x (same as lower_bound)
+ * 
+ * Time: O(log n) | Space: O(1)
+ * 
+ * Use case: Finding nearest values in sorted data
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,13 @@
+/*
+ * MOVE ZEROS TO END
+ * 
+ * Approach: Two pointer - swap non-zero with first zero position
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Maintains relative order of non-zero elements
+ */
+
 #include<iostream>
 using namespace  std;
 

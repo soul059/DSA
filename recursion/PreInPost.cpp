@@ -1,3 +1,10 @@
+/*
+ * Pre-order, In-order, Post-order Traversal Simulation
+ * Approach: Print before recursive calls (pre), between calls (in), after calls (post)
+ * Time: O(2^n) - binary tree structure
+ * Space: O(n) recursive stack
+ * Key: Demonstrates when code executes relative to recursive calls
+ */
 #include<iostream>
 
 void PreInPost(int n)

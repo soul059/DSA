@@ -1,3 +1,13 @@
+/*
+ * MERGE OVERLAPPING INTERVALS
+ * 
+ * Approach: Sort by start time
+ * If current start <= last end: merge (update end)
+ * Else: add as new interval
+ * 
+ * Time: O(n log n) for sorting | Space: O(n) for result
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

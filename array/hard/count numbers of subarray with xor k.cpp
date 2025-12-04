@@ -1,3 +1,14 @@
+/*
+ * COUNT SUBARRAYS WITH XOR EQUAL TO K
+ * 
+ * Similar to prefix sum, use prefix XOR
+ * If prefixXOR ^ k exists in map, those subarrays have XOR = k
+ * 
+ * Time: O(n) | Space: O(n)
+ * 
+ * Key: a ^ b = k means a ^ k = b
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

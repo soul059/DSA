@@ -1,3 +1,12 @@
+/*
+ * SEARCH INSERT POSITION
+ * 
+ * Find index where target should be inserted to maintain sorted order
+ * Same as lower_bound
+ * 
+ * Time: O(log n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,16 @@
+/*
+ * CLONE LINKED LIST WITH NEXT AND RANDOM POINTERS
+ * 
+ * Approach (O(1) space):
+ * 1. Insert clone nodes between original nodes (A->A'->B->B')
+ * 2. Set random pointers: clone.random = original.random.next
+ * 3. Separate original and cloned lists
+ * 
+ * Time: O(n) | Space: O(1) excluding result
+ * 
+ * Alternative: Use HashMap to map original->clone nodes O(n) space
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

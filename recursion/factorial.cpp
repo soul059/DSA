@@ -1,3 +1,10 @@
+/*
+ * Factorial of a Number
+ * Approach: n! = n * (n-1)!; base case: 0! = 1! = 1
+ * Time: O(n)
+ * Space: O(n) recursive stack
+ * Key: Classic recursion example - multiply n with factorial of n-1
+ */
 #include<iostream>
 int factorial(int n);
 int main() 

@@ -1,3 +1,14 @@
+/*
+ * LOWER BOUND - Binary Search
+ * 
+ * Definition: Smallest index where arr[i] >= x
+ * If no such element exists, returns array size
+ * 
+ * Time: O(log n) | Space: O(1)
+ * 
+ * Use case: Finding insertion point, first occurrence
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

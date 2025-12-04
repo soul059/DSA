@@ -1,3 +1,13 @@
+/*
+ * LOWEST/HIGHEST FREQUENCY ELEMENT - Using Hashing
+ * 
+ * Approach: Use unordered_map to store frequencies, then find min/max
+ * Time: O(n) | Space: O(n)
+ * 
+ * Steps: 1. Count frequency of each element
+ *        2. Traverse map to find min/max frequency element
+ */
+
 #include <iostream>
 #include <unordered_map>
 

@@ -1,3 +1,14 @@
+/*
+ * DELETE MIDDLE NODE OF LINKED LIST
+ * 
+ * Approach: Use slow-fast pointers with a prev pointer
+ * When fast reaches end, slow is at middle - delete it
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Edge case: Single node list
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

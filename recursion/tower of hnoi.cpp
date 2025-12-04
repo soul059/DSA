@@ -1,3 +1,10 @@
+/*
+ * Tower of Hanoi
+ * Approach: Move n-1 disks to helper, move largest to dest, move n-1 from helper to dest
+ * Time: O(2^n) - minimum moves required
+ * Space: O(n) recursive stack
+ * Key: 3 pegs (source, helper, destination); never place larger disk on smaller
+ */
 #include<iostream>
 
 void tower(int n,char s,char h,char d)

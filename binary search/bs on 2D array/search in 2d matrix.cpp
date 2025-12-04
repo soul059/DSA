@@ -1,3 +1,15 @@
+/*
+ * SEARCH IN 2D MATRIX
+ * 
+ * Matrix properties: Rows sorted, first elem > last of prev row
+ * Treat as 1D sorted array of size n*m
+ * 
+ * Approach: Binary search with index conversion
+ * - row = mid / cols, col = mid % cols
+ * 
+ * Time: O(log(n*m)) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

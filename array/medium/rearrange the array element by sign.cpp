@@ -1,3 +1,12 @@
+/*
+ * REARRANGE ARRAY BY SIGN (Alternate +/-)
+ * 
+ * Variant 1: Equal positives and negatives - O(n) time, O(n) space
+ * Variant 2: Unequal count - extra elements go at end
+ * 
+ * Place positives at even indices, negatives at odd
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

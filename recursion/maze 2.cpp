@@ -1,3 +1,10 @@
+/*
+ * Count Paths in Grid (Start to End coordinates)
+ * Approach: From current (cr,cc) to end (er,ec); move right or down recursively
+ * Time: O(2^(n+m)) - exponential without memoization
+ * Space: O(n+m) recursive stack
+ * Key: Track current position; base case when current == end position
+ */
 #include<iostream>
 int maze(int cr, int cc, int er,int ec)
 {

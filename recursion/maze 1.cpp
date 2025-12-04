@@ -1,3 +1,10 @@
+/*
+ * Count Paths in Grid (Top-Left to Bottom-Right)
+ * Approach: From (n,m) count paths by going right (n,m-1) + down (n-1,m)
+ * Time: O(2^(n+m)) - exponential without memoization
+ * Space: O(n+m) recursive stack
+ * Key: Only right and down moves allowed; base case when reaching (1,1)
+ */
 #include<iostream>
 
 int maze(int n,int m)

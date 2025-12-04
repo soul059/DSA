@@ -1,3 +1,15 @@
+/*
+ * SINGLE ELEMENT IN SORTED ARRAY
+ * 
+ * Every element appears twice except one. Find the single one.
+ * 
+ * Approach: Binary Search using index parity
+ * - Before single: pairs are at (even, odd) indices
+ * - After single: pairs are at (odd, even) indices
+ * 
+ * Time: O(log n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

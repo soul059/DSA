@@ -1,3 +1,14 @@
+/*
+ * LEFT ROTATE ARRAY BY X PLACES
+ * 
+ * Approach: Reversal Algorithm (3 reverses)
+ * 1. Reverse first x elements
+ * 2. Reverse remaining n-x elements
+ * 3. Reverse entire array
+ * 
+ * Time: O(n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<algorithm> // Add this line to include the <algorithm> header
 using namespace  std;

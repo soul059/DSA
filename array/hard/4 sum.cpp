@@ -1,3 +1,14 @@
+/*
+ * 4 SUM - Find quadruplets with given sum
+ * 
+ * Approach: Sort + Two nested loops + Two Pointer
+ * Fix two elements, use 2Sum on remaining
+ * 
+ * Time: O(n³) | Space: O(1) excluding result
+ * 
+ * Skip duplicates at each level to avoid repetition
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

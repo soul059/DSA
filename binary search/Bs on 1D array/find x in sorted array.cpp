@@ -1,3 +1,14 @@
+/*
+ * BINARY SEARCH - Find X in Sorted Array
+ * 
+ * Approach: Divide search space in half each iteration
+ * - If arr[mid] == x: found
+ * - If arr[mid] > x: search left half
+ * - If arr[mid] < x: search right half
+ * 
+ * Time: O(log n) | Space: O(1) iterative, O(log n) recursive
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

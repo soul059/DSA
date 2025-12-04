@@ -1,3 +1,13 @@
+/*
+ * FIND NUMBER APPEARING ONCE (Others appear twice)
+ * 
+ * Approach: XOR all elements
+ * a^a = 0, a^0 = a
+ * Duplicates cancel out, single element remains
+ * 
+ * Time: O(n) | Space: O(1)
+ */
+
 #include<iostream>
 using namespace  std;
 

@@ -1,3 +1,14 @@
+/*
+ * FIND REPEATING AND MISSING NUMBERS
+ * 
+ * Approach 1: Math - Use sum and sum of squares formulas
+ * Approach 2: XOR - XOR all elements with 1 to n, then separate
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * XOR approach: Find rightmost set bit to divide into groups
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

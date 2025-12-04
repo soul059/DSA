@@ -1,3 +1,14 @@
+/*
+ * LEADERS IN AN ARRAY
+ * 
+ * Leader: Element greater than all elements to its right
+ * 
+ * Approach: Traverse from right, track maximum
+ * If element > max, it's a leader
+ * 
+ * Time: O(n) | Space: O(n) for result
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,14 @@
+/*
+ * SET MATRIX ZEROES
+ * 
+ * Approach: Use first row/column as markers
+ * 1. Mark rows and columns that need to be zeroed
+ * 2. Use markers to set zeroes (avoid first row/col)
+ * 3. Handle first row/column separately
+ * 
+ * Time: O(m*n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

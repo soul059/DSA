@@ -1,3 +1,15 @@
+/*
+ * MAXIMUM PRODUCT SUBARRAY
+ * 
+ * Approach: Track prefix and suffix products
+ * Reset to 1 when product becomes 0
+ * Answer is max of all prefix and suffix products
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Why prefix & suffix? Handles negative numbers
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

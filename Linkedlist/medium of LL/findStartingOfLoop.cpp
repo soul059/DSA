@@ -1,3 +1,15 @@
+/*
+ * FIND STARTING NODE OF LOOP - Floyd's Algorithm Extended
+ * 
+ * Approach: 1. Detect loop using slow & fast pointers
+ *           2. Reset slow to head, keep fast at meeting point
+ *           3. Move both 1 step at a time - they meet at loop start
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Math: Distance from head to loop start = Distance from meeting point to loop start
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

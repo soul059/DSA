@@ -1,4 +1,12 @@
-// Problem Statement: Given an integer array ‘A’ of size ‘N’ and an integer ‘K'. Split the array ‘A’ into ‘K’ non-empty subarrays such that the largest sum of any subarray is minimized. Your task is to return the minimized largest sum of the split.
+/*
+ * Split Array - Largest Sum
+ * Approach: Binary search on answer [max, sum]; same as book allocation problem
+ *           Split into k subarrays minimizing the maximum subarray sum
+ * Time: O(n * log(sum - max))
+ * Space: O(1)
+ * Key: Identical to book allocation - divide array into k parts minimizing max sum
+ */
+// Problem Statement: Given an integer array 'A' of size 'N' and an integer 'K'. Split the array 'A' into 'K' non-empty subarrays such that the largest sum of any subarray is minimized. Your task is to return the minimized largest sum of the split.
 // A subarray is a contiguous part of the array.
 
 //same as allocate minimum number of pages

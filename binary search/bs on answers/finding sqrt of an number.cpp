@@ -1,3 +1,15 @@
+/*
+ * SQUARE ROOT OF A NUMBER - Binary Search on Answer
+ * 
+ * Find largest integer x where x*x <= n
+ * 
+ * Approach: Binary search from 1 to n
+ * - If mid*mid <= n: answer could be mid or higher
+ * - Else: search lower half
+ * 
+ * Time: O(log n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

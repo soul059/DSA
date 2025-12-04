@@ -1,3 +1,14 @@
+/*
+ * MERGE TWO SORTED LINKED LISTS
+ * 
+ * Approach: Compare nodes from both lists, link smaller one first
+ * Use dummy node to simplify edge cases
+ * 
+ * Time: O(n+m) | Space: O(1) - only rearranging pointers
+ * 
+ * Similar to merge step in merge sort
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

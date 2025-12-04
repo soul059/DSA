@@ -1,3 +1,15 @@
+/*
+ * ROTATE LINKED LIST K TIMES
+ * 
+ * Approach: 1. Find length and make it circular
+ *           2. Find new tail at (len - k%len - 1)
+ *           3. New head is next of new tail, break link
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Key insight: k rotations = moving last k nodes to front
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

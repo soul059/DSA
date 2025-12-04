@@ -1,3 +1,14 @@
+/*
+ * REMOVE DUPLICATES FROM SORTED ARRAY
+ * 
+ * Approach: Two pointer - track unique position
+ * When new element found, place it at unique position
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Returns count of unique elements
+ */
+
 #include<iostream>
 using namespace  std;
 

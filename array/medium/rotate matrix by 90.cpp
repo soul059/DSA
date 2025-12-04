@@ -1,3 +1,14 @@
+/*
+ * ROTATE MATRIX BY 90 DEGREES (Clockwise)
+ * 
+ * Approach: 1. Transpose the matrix (swap rows & columns)
+ *           2. Reverse each row
+ * 
+ * Time: O(n²) | Space: O(1)
+ * 
+ * Anti-clockwise: Reverse each row first, then transpose
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,12 @@
+/*
+ * MERGE TWO SORTED ARRAYS WITHOUT EXTRA SPACE
+ * 
+ * Approach 1: Gap Method (Shell Sort idea) - O((n+m)log(n+m))
+ * Approach 2: Two Pointer - Swap if arr1[left] > arr2[right], then sort
+ * 
+ * Time: O((n+m)log(n+m)) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

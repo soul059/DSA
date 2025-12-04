@@ -1,3 +1,11 @@
+/*
+ * Kth Missing Positive Number
+ * Approach: Binary search; missing count before index i = arr[i] - (i+1)
+ *           Find position where missing count transitions from < k to >= k
+ * Time: O(log n)
+ * Space: O(1)
+ * Key: Answer = k + high + 1 (position after binary search completes)
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

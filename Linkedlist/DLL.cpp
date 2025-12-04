@@ -1,3 +1,20 @@
+/*
+ * DOUBLY LINKED LIST IMPLEMENTATION
+ * 
+ * Each node contains: prev pointer + data + next pointer
+ * Allows traversal in both directions
+ * 
+ * Operations & Time Complexity:
+ * - Insert at head/tail: O(1)
+ * - Insert at K: O(k)
+ * - Delete at head/tail: O(1)
+ * - Delete at K: O(k)
+ * - Reverse: O(n)
+ * 
+ * Advantage over SLL: O(1) deletion if node pointer is given
+ * Space: O(n) for n nodes
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

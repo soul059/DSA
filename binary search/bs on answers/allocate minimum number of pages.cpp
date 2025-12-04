@@ -1,5 +1,14 @@
 
 
+/*
+ * Allocate Minimum Number of Pages (Book Allocation)
+ * Approach: Binary search on answer [max, sum]; for each max-pages count students needed
+ *           Find minimum max-pages where students <= m
+ * Time: O(n * log(sum - max))
+ * Space: O(1)
+ * Key: Each student reads contiguous books; minimize the maximum pages any student reads
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 

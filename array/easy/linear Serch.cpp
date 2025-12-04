@@ -1,3 +1,13 @@
+/*
+ * LINEAR SEARCH
+ * 
+ * Approach: Check each element sequentially
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Works on unsorted arrays
+ */
+
 #include<iostream>
 using namespace  std;
 

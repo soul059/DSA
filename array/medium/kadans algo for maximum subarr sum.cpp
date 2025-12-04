@@ -1,3 +1,14 @@
+/*
+ * KADANE'S ALGORITHM - Maximum Subarray Sum
+ * 
+ * Approach: Track current sum, reset if negative
+ * Update max whenever current sum exceeds it
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * Also tracks start and end indices of max subarray
+ */
+
 #include<iostream>
 #include<vector>
 #include<unordered_map>

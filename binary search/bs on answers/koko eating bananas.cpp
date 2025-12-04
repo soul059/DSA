@@ -1,3 +1,16 @@
+/*
+ * KOKO EATING BANANAS - Binary Search on Answer
+ * 
+ * Find minimum eating speed K to finish all piles in H hours
+ * 
+ * Approach: Binary search on speed [1, max(piles)]
+ * - Calculate hours needed for speed mid
+ * - If hours <= H: try lower speed
+ * - Else: need higher speed
+ * 
+ * Time: O(n * log(max)) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

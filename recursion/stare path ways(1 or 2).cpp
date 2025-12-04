@@ -1,3 +1,10 @@
+/*
+ * Staircase Problem (1 or 2 steps)
+ * Approach: ways(n) = ways(n-1) + ways(n-2); similar to Fibonacci
+ * Time: O(2^n) without memoization
+ * Space: O(n) recursive stack
+ * Key: From step n, you could have come from n-1 (1 step) or n-2 (2 steps)
+ */
 #include<iostream>
 
 int stare(int n)

@@ -1,3 +1,13 @@
+/*
+ * 3 SUM - Find triplets with sum = 0
+ * 
+ * Approach 1: HashSet - O(n²) time, O(n) space
+ * Approach 2: Two Pointer (sort first) - O(n²) time, O(1) space
+ * 
+ * Two Pointer: Fix one element, use 2Sum on rest
+ * Skip duplicates to avoid repeated triplets
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

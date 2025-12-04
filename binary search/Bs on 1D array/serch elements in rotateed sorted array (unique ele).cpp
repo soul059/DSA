@@ -1,3 +1,16 @@
+/*
+ * SEARCH IN ROTATED SORTED ARRAY (Unique Elements)
+ * 
+ * Approach: Modified Binary Search
+ * - Identify which half is sorted
+ * - Check if target lies in sorted half
+ * - Eliminate the other half
+ * 
+ * Time: O(log n) | Space: O(1)
+ * 
+ * Key: At least one half is always sorted
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

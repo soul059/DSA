@@ -1,3 +1,15 @@
+/*
+ * FIND MINIMUM IN ROTATED SORTED ARRAY
+ * 
+ * Approach: Binary Search
+ * - If left half sorted: min is arr[low], search right
+ * - If right half sorted: min might be arr[mid], search left
+ * 
+ * Time: O(log n) | Space: O(1)
+ * 
+ * Minimum is the pivot point (rotation count)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

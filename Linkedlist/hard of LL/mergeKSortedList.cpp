@@ -1,3 +1,15 @@
+/*
+ * MERGE K SORTED LINKED LISTS
+ * 
+ * Approach 1: Divide & Conquer - Pair up and merge like merge sort
+ * Approach 2: Min-Heap - Push all heads, extract min, push its next
+ * 
+ * Time: O(N log K) where N=total nodes, K=number of lists
+ * Space: O(K) for heap or O(log K) for recursion
+ * 
+ * Heap approach is preferred for large K
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

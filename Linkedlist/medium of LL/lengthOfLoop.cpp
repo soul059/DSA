@@ -1,3 +1,12 @@
+/*
+ * LENGTH OF LOOP IN LINKED LIST
+ * 
+ * Approach: 1. Detect loop using Floyd's algorithm
+ *           2. From meeting point, count nodes until we return
+ * 
+ * Time: O(n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

@@ -1,3 +1,16 @@
+/*
+ * NEXT PERMUTATION
+ * 
+ * Steps:
+ * 1. Find breakpoint: rightmost i where arr[i] < arr[i+1]
+ * 2. Find rightmost element > arr[i], swap
+ * 3. Reverse suffix after breakpoint
+ * 
+ * Time: O(n) | Space: O(1)
+ * 
+ * If no breakpoint, array is in descending order - reverse all
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

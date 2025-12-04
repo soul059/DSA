@@ -1,3 +1,11 @@
+/*
+ * FIND LARGEST ELEMENT IN ARRAY
+ * 
+ * Approach: Linear scan, track maximum
+ * 
+ * Time: O(n) | Space: O(1)
+ */
+
 #include<iostream>
 using namespace  std;
 

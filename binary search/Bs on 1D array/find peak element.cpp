@@ -1,3 +1,16 @@
+/*
+ * FIND PEAK ELEMENT
+ * 
+ * Peak: Element greater than both neighbors
+ * 
+ * Approach: Binary Search
+ * - If arr[mid] > arr[mid-1] and arr[mid] > arr[mid+1]: peak found
+ * - If arr[mid] < arr[mid+1]: peak is on right (ascending)
+ * - Else: peak is on left
+ * 
+ * Time: O(log n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

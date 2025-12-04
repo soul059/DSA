@@ -1,3 +1,16 @@
+/*
+ * SORT LINKED LIST - Using Merge Sort
+ * 
+ * Approach: Divide & Conquer
+ * 1. Find middle, split into two halves
+ * 2. Recursively sort both halves
+ * 3. Merge sorted halves
+ * 
+ * Time: O(n log n) | Space: O(log n) for recursion stack
+ * 
+ * Why Merge Sort? Works well with LL due to sequential access
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

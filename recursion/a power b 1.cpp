@@ -1,3 +1,10 @@
+/*
+ * Power of a Number (Linear Recursion)
+ * Approach: Multiply 'a' recursively b times; a^b = a * a^(b-1), base: a^0 = 1
+ * Time: O(b)
+ * Space: O(b) recursive stack
+ * Key: Simple but inefficient for large exponents
+ */
 #include<iostream>
 
 int power(int a, int b)

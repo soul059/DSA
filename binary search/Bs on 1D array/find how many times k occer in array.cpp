@@ -1,3 +1,11 @@
+/*
+ * COUNT OCCURRENCES OF K IN SORTED ARRAY
+ * 
+ * Count = upper_bound(k) - lower_bound(k)
+ * 
+ * Time: O(log n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

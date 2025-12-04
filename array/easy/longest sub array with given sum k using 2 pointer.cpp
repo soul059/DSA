@@ -1,3 +1,12 @@
+/*
+ * LONGEST SUBARRAY WITH SUM K - Two Pointer (Sliding Window)
+ * 
+ * Works only for positive numbers
+ * Expand window by moving right, shrink by moving left
+ * 
+ * Time: O(n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<unordered_map>

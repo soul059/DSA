@@ -1,3 +1,12 @@
+/*
+ * MAX CONSECUTIVE ONES
+ * 
+ * Approach: Track current streak and max streak
+ * Reset current when 0 is encountered
+ * 
+ * Time: O(n) | Space: O(1)
+ */
+
 #include<iostream>
 using namespace  std;
 

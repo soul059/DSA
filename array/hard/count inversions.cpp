@@ -1,3 +1,15 @@
+/*
+ * COUNT INVERSIONS - Modified Merge Sort
+ * 
+ * Inversion: arr[i] > arr[j] where i < j
+ * 
+ * Approach: During merge, if left[i] > right[j],
+ * all remaining elements in left are inversions
+ * Count += (mid - left + 1)
+ * 
+ * Time: O(n log n) | Space: O(n)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

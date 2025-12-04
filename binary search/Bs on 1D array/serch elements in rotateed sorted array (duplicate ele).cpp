@@ -1,3 +1,11 @@
+/*
+ * Search in Rotated Sorted Array with Duplicates
+ * Approach: Modified binary search - when duplicates cause arr[low]==arr[mid]==arr[high],
+ *           shrink both ends; otherwise identify sorted half and eliminate accordingly
+ * Time: O(log n) average, O(n) worst case (all duplicates)
+ * Space: O(1)
+ * Key: Handle duplicates by shrinking search space when equality at all three pointers
+ */
 #include<iostream>
 #include<vector>
 #include<algorithm>

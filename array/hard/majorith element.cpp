@@ -1,3 +1,13 @@
+/*
+ * MAJORITY ELEMENT II - Appears more than n/3 times
+ * 
+ * Extended Moore's Voting Algorithm
+ * At most 2 elements can appear > n/3 times
+ * Track 2 candidates with counts, verify at end
+ * 
+ * Time: O(n) | Space: O(1)
+ */
+
 #include<iostream>
 #include<vector>
 #include<algorithm>

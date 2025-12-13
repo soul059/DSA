@@ -4,6 +4,25 @@
 #include<stack>
 using namespace  std;
 
+/*
+ * @file maximul rect.cpp
+ * @brief Finds the maximum rectangular area containing only 1s in a binary matrix
+
+ * Algorithm Overview:
+ * 1. maxAreaRectHistogram: Uses stack-based approach to find largest rectangle in histogram
+ *    - Maintains monotonic increasing stack of indices
+ *    - For each bar, calculates area with that bar as the smallest height
+ *    - Time: O(n), Space: O(n)
+
+ * 2. maxAreaRectMatrix: Converts 2D problem to multiple 1D histogram problems
+ *    - Treats each row as base of histogram
+ *    - Heights accumulate for consecutive 1s vertically, reset to 0 on encountering 0
+ *    - Calls histogram function for each row and tracks max area
+ *    - Time: O(rows * cols), Space: O(cols)
+
+ * Example: For matrix [[1,0,1],[1,1,1]], row 1 heights = [2,1,2], max rect = 3
+ */
+
 int maxAreaRectHistogram(const vector<int>& heights) {
     int n = heights.size();
     stack<int> st;

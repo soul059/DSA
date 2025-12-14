@@ -5,6 +5,33 @@
 #include<list>
 using namespace  std;
 
+/*
+ * LRUCache
+
+ * Problem:
+ *   Implement a fixed-capacity key->value store that supports retrieval and insertion
+ *   while evicting the least-recently-used (LRU) item when capacity is exceeded.
+
+ * Approach:
+ *   - Maintain usage order with a doubly-linked list (std::list) where the front is
+ *     most-recently-used and the back is least-recently-used.
+ *   - Maintain O(1) key lookup with a map from key -> iterator into the list.
+ *   - get(key): if present, move the node to the front (most recent) using splice and
+ *     return the pair; otherwise return a not-found marker.
+ *   - put(key, value): if key exists, update value and move node to front; if new and
+ *     capacity reached, evict the back(); then insert new node at front and record its iterator.
+ *   - deleteKey(key): remove node and map entry if present.
+
+ * Complexity:
+ *   - get, put, deleteKey: O(1) average time (map lookup + list splice/erase/insert).
+ *   - Space: O(capacity) for list + map.
+
+ * Notes / Caveats:
+ *   - Uses std::map for keyMap (log n lookups); for strict O(1) average use unordered_map.
+ *   - Not thread-safe; concurrent access requires external synchronization.
+ *   - Values are stored as int,int pairs here; generalize types or templating for reuse.
+ */
+
 class LRUCache {
     int capacity;
     list<pair<int, int>> cache; // stores {key, value}

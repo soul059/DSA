@@ -34,6 +34,7 @@ int longestRepeatingCharReplace(const string& s, int k) {
         
         if((right - left + 1) - maxCount > k) {
             charCount[s[left]]--;
+            
             left++;
         }
         

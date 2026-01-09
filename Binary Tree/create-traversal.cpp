@@ -204,6 +204,37 @@ public:
 
 
 int main(){
-    
+    BinaryTree bt;
+    bt.insert(1);
+    bt.insert(2);
+    bt.insert(3);
+    bt.insert(4);
+
+    vector<int> inorder = bt.getInorder();
+    cout << "Inorder Traversal: ";
+    for (int val : inorder) {
+        cout << val << " ";
+    }
+    cout << endl;
+    vector<int> preorder = bt.getPreorder();
+    cout << "Preorder Traversal: ";
+    for (int val : preorder) {
+        cout << val << " ";
+    }
+    cout << endl;
+
+    vector<int> postorder = bt.getPostorder();
+    cout << "Postorder Traversal: ";
+    for (int val : postorder) {
+        cout << val << " ";
+    }
+    cout << endl;
+
+    vector<int> bfs = bt.getBFS();
+    cout << "BFS Traversal: ";
+    for (int val : bfs) {
+        cout << val << " ";
+    }
+    cout << endl;
     return 0;
 }
